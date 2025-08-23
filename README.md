@@ -1,2 +1,34 @@
-# BrushHero
-BrushHero: A real-time overlay system for hand and face tracking, helping users brush smarter with visual cues and gesture-aware feedback. Powered by MediaPipe and OpenCV.
+🪥 BrushHero
+Real-time hand and face overlay system using MediaPipe and OpenCV, designed to promote detailed, effective tooth brushing through visual guidance.
+
+🚀 Features
+🖐️ Hand Tracking – Detects grip posture and brushing gestures using MediaPipe Hands
+
+🙂 Face Tracking – Locates facial landmarks to align brushing zones
+
+🎨 Overlay System – Modular painters for visual feedback and brushing guidance
+
+🧠 Extensible Architecture – Built for future features like quadrant brushing and mask overlays
+
+📦 Modular Codebase – Clean separation of logic, rendering, and input handling
+
+📸 Demo - Please follow Jinudotdev repo for updates on how this development is going
+
+## 🌐 Live Site
+
+Project updates and architecture notes: [https://jinu.dev](https://jinu.dev)
+
+
+# Clone the repo
+git clone https://github.com/jinudotdev/BrushHero.git
+cd BrushHero
+
+# (Optional) Create a virtual environment
+python -m venv venv
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the app
+python src/main.py
