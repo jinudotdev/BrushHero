@@ -24,6 +24,7 @@ def draw_hand_overlay(frame):
                 color=(0, 255, 0),
                 thickness=2,
             )
+    return hand_landmarks_list
 
 # Detect hand landmarks from frame
 def detect_landmarks(frame):

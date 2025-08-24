@@ -37,9 +37,10 @@ def draw_face_overlay(frame):
             color=(255, 255, 255),
             thickness=1,
         )
+    return multi_face_landmarks
 
 # Detect face landmarks from frame
 def detect_face_landmarks(frame):
-    frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB) #BGR to RGB
+    frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB) #bgr to RGB
     results = face_mesh.process(frame_rgb)
     return results.multi_face_landmarks if results.multi_face_landmarks else []
