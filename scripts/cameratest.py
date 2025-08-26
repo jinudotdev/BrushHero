@@ -1,7 +1,17 @@
 import cv2
 import time
+from AVFoundation import AVCaptureDevice
+
+def get_camera_names():
+    devices = AVCaptureDevice.devicesWithMediaType_("vide")
+    return [str(device.localizedName()) for device in devices]
 
 def scan_cameras(max_index=5, preview_duration=3):
+    camera_names = get_camera_names()
+    print("Detected camera names:")
+    for idx, name in enumerate(camera_names):
+        print(f"  [{idx}] {name}")
+
     for i in range(max_index):
         print(f"\nTrying camera index {i}...")
         cap = cv2.VideoCapture(i)
