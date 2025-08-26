@@ -8,16 +8,11 @@ Real-time hand and face overlay system using MediaPipe and OpenCV, designed to p
 
 🎨 Overlay System – Modular painters for visual feedback and brushing guidance
 
-🧠 Extensible Architecture – Built for future features like quadrant brushing and mask overlays
-
 📦 Modular Codebase – Clean separation of logic, rendering, and input handling
-
-📸 Demo - Please follow Jinudotdev repo for updates on how this development is going
 
 ## 🌐 Live Site
 
 Project updates and architecture notes: [https://jinu.dev](https://jinu.dev)
-
 
 # Clone the repo
 git clone https://github.com/jinudotdev/BrushHero.git
